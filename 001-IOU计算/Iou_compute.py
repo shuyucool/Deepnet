@@ -8,7 +8,7 @@ def IOU( box1, box2 ):
     :return: iou_ratio--交并比
     """
     width1 = abs(box1[2] - box1[0])
-    height1 = abs(box1[1] - box1[3]) # 这里y1-y2是因为一般情况y1>y2
+    height1 = abs(box1[1] - box1[3]) # 这里y1-y2是因为一般情况y1>y2，为了方便采用绝对值
     width2 = abs(box2[2] - box2[0])
     height2 = abs(box2[1] - box2[3])
     x_max = max(box1[0],box1[2],box2[0],box2[2])
