@@ -26,5 +26,5 @@ def IOU( box1, box2 ):
         iou_ratio = iou_area / (box1_area + box2_area - iou_area) # 并集的面积
     return iou_ratio
 box1 = [1,3,4,1]
-box2 = [4,4,5,2]
+box2 = [2,4,5,2]
 print(IOU(box1,box2))
